@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A responsive login page demo built with HTML, CSS, and JavaScript.">
+  <title>Sign in | Northstar</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="page-shell">
+    <section class="intro" aria-label="Welcome">
+      <a class="brand" href="#" aria-label="Northstar home"><span class="brand-mark">N</span> northstar</a>
+      <div class="intro-copy">
+        <p class="eyebrow">YOUR WORKSPACE, IN ONE PLACE</p>
+        <h1>Make room for<br><span>great work.</span></h1>
+        <p class="intro-text">Sign in to pick up where you left off and keep your team moving forward.</p>
+      </div>
+      <p class="intro-foot">Simple tools. Clear focus. Better work.</p>
+    </section>
+
+    <section class="login-area" aria-labelledby="login-title">
+      <div class="login-card">
+        <div class="mobile-brand"><span class="brand-mark">N</span> northstar</div>
+        <p class="eyebrow">WELCOME BACK</p>
+        <h2 id="login-title">Sign in to your account</h2>
+        <p class="subheading">Enter your details below to continue.</p>
+
+        <form id="login-form" novalidate>
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="username" required>
+          <div class="password-label">
+            <label for="password">Password</label>
+            <a href="#" id="forgot-link">Forgot password?</a>
+          </div>
+          <div class="password-wrap">
+            <input id="password" name="password" type="password" placeholder="Enter your password" autocomplete="current-password" required>
+            <button id="toggle-password" class="toggle-password" type="button" aria-label="Show password">Show</button>
+          </div>
+          <p id="message" class="message" role="status" aria-live="polite"></p>
+          <button class="submit-button" type="submit">Sign in <span aria-hidden="true">→</span></button>
+        </form>
+
+        <p class="signup">New to Northstar? <a href="#" id="signup-link">Create an account</a></p>
+        <p class="demo-note">Demo credentials: <strong>demo@example.com</strong> / <strong>password123</strong></p>
+      </div>
+      <footer>© 2026 Northstar · <a href="#">Privacy</a> · <a href="#">Terms</a></footer>
+    </section>
+  </main>
+</body>
+</html>
